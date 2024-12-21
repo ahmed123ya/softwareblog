@@ -42,5 +42,112 @@
     <p>Powered By Ahmed <a href="https://www.linkedin.com/in/ahmed-raza-0584a9295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Linkedin</a></p>
   </div>
 </div>
+<script type="module">
+  import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+  Chatbot.init({
+      chatflowid: "12b7dc25-d71b-45bc-8258-58c9a00ded97",
+      apiHost: "https://71u4eifk.rpcld.com",
+      chatflowConfig: {
+          /* Chatflow Config */
+      },
+      observersConfig: {
+          /* Observers Config */
+      },
+      theme: {
+          button: {
+              backgroundColor: '#3B81F6',
+              right: 20,
+              bottom: 20,
+              size: 48,
+              dragAndDrop: true,
+              iconColor: 'white',
+              customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+              autoWindowOpen: {
+                  autoOpen: true,
+                  openDelay: 2,
+                  autoOpenOnMobile: false
+              }
+          },
+          tooltip: {
+                showTooltip: true,
+                tooltipMessage: '',
+                tooltipBackgroundColor: 'black',
+                tooltipTextColor: 'white',
+                tooltipFontSize: 16
+            },
+          disclaimer: {
+              title: 'Disclaimer',
+              message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+              textColor: 'black',
+              buttonColor: '#3b82f6',
+              buttonText: 'Start Chatting',
+              buttonTextColor: 'white',
+              blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+              backgroundColor: 'white'
+          },
+          customCSS: ``,
+          chatWindow: {
+              showTitle: true,
+              showAgentMessages: true,
+              title: 'Software Bot',
+              titleAvatarSrc: 'https://scx2.b-cdn.net/gfx/news/2019/3-robot.jpg',
+              welcomeMessage: 'Hello! This is Sofware Devolopment Bot How may I Help you?',
+              backgroundColor: '#ffffff',
+              backgroundImage: 'enter image path or link',
+              height: 700,
+              width: 400,
+              fontSize: 16,
+              starterPrompts: [
+                  "What is Sofware Devolopment?",
+                  "What is Working of Software Devolopment?",
+                  "Scope of Software Devolopment"
+              ],
+              starterPromptFontSize: 15,
+              clearChatOnReload: false,
+              sourceDocsTitle: 'Sources:',
+              renderHTML: true,
+              botMessage: {
+                  backgroundColor: '#f7f8ff',
+                  textColor: '#303235',
+                  showAvatar: true,
+                  avatarSrc: 'https://scx2.b-cdn.net/gfx/news/2019/3-robot.jpg'
+              },
+              userMessage: {
+                  backgroundColor: '#3B81F6',
+                  textColor: '#ffffff',
+                  showAvatar: true,
+                  avatarSrc: 'https://scx2.b-cdn.net/gfx/news/2019/3-robot.jpg'
+              },
+              textInput: {
+                  placeholder: 'Type your question',
+                  backgroundColor: '#ffffff',
+                  textColor: '#303235',
+                  sendButtonColor: '#3B81F6',
+                  maxChars: 50,
+                  maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                  autoFocus: true,
+                  sendMessageSound: true,
+                  sendSoundLocation: 'send_message.mp3',
+                  receiveMessageSound: true,
+                  receiveSoundLocation: 'receive_message.mp3'
+              },
+              feedback: {
+                  color: '#303235'
+              },
+              dateTimeToggle: {
+                  date: true,
+                  time: true
+              },
+              footer: {
+                  textColor: '#303235',
+                  text: 'Powered by',
+                  company: 'Ahmed',
+                  companyLink: 'https://www.linkedin.com/in/ahmed-raza-0584a9295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app '
+              }
+          }
+      }
+  })
+</script>
+
 </body>
 </html>
